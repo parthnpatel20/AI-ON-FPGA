@@ -1,0 +1,229 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'hwmm_layer1'" level="0">
+<item name = "Date">Tue Nov 25 19:16:10 2025
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)</item>
+<item name = "Project">FPGAI</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">30.00 ns, 24.166 ns, 0.20 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3424, 3424, 0.103 ms, 0.103 ms, 3424, 3424, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_hwmm_layer1_Pipeline_prod_fu_631">hwmm_layer1_Pipeline_prod, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod4_fu_640">hwmm_layer1_Pipeline_prod4, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod5_fu_649">hwmm_layer1_Pipeline_prod5, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod6_fu_658">hwmm_layer1_Pipeline_prod6, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod7_fu_667">hwmm_layer1_Pipeline_prod7, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod8_fu_676">hwmm_layer1_Pipeline_prod8, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod9_fu_685">hwmm_layer1_Pipeline_prod9, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod10_fu_694">hwmm_layer1_Pipeline_prod10, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod11_fu_703">hwmm_layer1_Pipeline_prod11, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod12_fu_712">hwmm_layer1_Pipeline_prod12, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod13_fu_721">hwmm_layer1_Pipeline_prod13, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod14_fu_730">hwmm_layer1_Pipeline_prod14, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod15_fu_739">hwmm_layer1_Pipeline_prod15, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod16_fu_748">hwmm_layer1_Pipeline_prod16, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod17_fu_757">hwmm_layer1_Pipeline_prod17, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod18_fu_766">hwmm_layer1_Pipeline_prod18, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod19_fu_775">hwmm_layer1_Pipeline_prod19, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod20_fu_784">hwmm_layer1_Pipeline_prod20, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod21_fu_793">hwmm_layer1_Pipeline_prod21, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod22_fu_802">hwmm_layer1_Pipeline_prod22, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod23_fu_811">hwmm_layer1_Pipeline_prod23, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod24_fu_820">hwmm_layer1_Pipeline_prod24, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod25_fu_829">hwmm_layer1_Pipeline_prod25, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod26_fu_838">hwmm_layer1_Pipeline_prod26, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod27_fu_847">hwmm_layer1_Pipeline_prod27, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod28_fu_856">hwmm_layer1_Pipeline_prod28, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod29_fu_865">hwmm_layer1_Pipeline_prod29, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod30_fu_874">hwmm_layer1_Pipeline_prod30, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod31_fu_883">hwmm_layer1_Pipeline_prod31, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod32_fu_892">hwmm_layer1_Pipeline_prod32, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod33_fu_901">hwmm_layer1_Pipeline_prod33, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod34_fu_910">hwmm_layer1_Pipeline_prod34, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">32, 5, 4945, 4289, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 1775, -</column>
+<column name="Register">-, -, 97, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">11, 2, 4, 11, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="fadd_32ns_32ns_32_2_full_dsp_1_U166">fadd_32ns_32ns_32_2_full_dsp_1, 0, 2, 177, 385, 0</column>
+<column name="fmul_32ns_32ns_32_2_max_dsp_1_U167">fmul_32ns_32ns_32_2_max_dsp_1, 0, 3, 128, 320, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod_fu_631">hwmm_layer1_Pipeline_prod, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod10_fu_694">hwmm_layer1_Pipeline_prod10, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod11_fu_703">hwmm_layer1_Pipeline_prod11, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod12_fu_712">hwmm_layer1_Pipeline_prod12, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod13_fu_721">hwmm_layer1_Pipeline_prod13, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod14_fu_730">hwmm_layer1_Pipeline_prod14, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod15_fu_739">hwmm_layer1_Pipeline_prod15, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod16_fu_748">hwmm_layer1_Pipeline_prod16, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod17_fu_757">hwmm_layer1_Pipeline_prod17, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod18_fu_766">hwmm_layer1_Pipeline_prod18, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod19_fu_775">hwmm_layer1_Pipeline_prod19, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod20_fu_784">hwmm_layer1_Pipeline_prod20, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod21_fu_793">hwmm_layer1_Pipeline_prod21, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod22_fu_802">hwmm_layer1_Pipeline_prod22, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod23_fu_811">hwmm_layer1_Pipeline_prod23, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod24_fu_820">hwmm_layer1_Pipeline_prod24, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod25_fu_829">hwmm_layer1_Pipeline_prod25, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod26_fu_838">hwmm_layer1_Pipeline_prod26, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod27_fu_847">hwmm_layer1_Pipeline_prod27, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod28_fu_856">hwmm_layer1_Pipeline_prod28, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod29_fu_865">hwmm_layer1_Pipeline_prod29, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod30_fu_874">hwmm_layer1_Pipeline_prod30, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod31_fu_883">hwmm_layer1_Pipeline_prod31, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod32_fu_892">hwmm_layer1_Pipeline_prod32, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod33_fu_901">hwmm_layer1_Pipeline_prod33, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod34_fu_910">hwmm_layer1_Pipeline_prod34, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod4_fu_640">hwmm_layer1_Pipeline_prod4, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod5_fu_649">hwmm_layer1_Pipeline_prod5, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod6_fu_658">hwmm_layer1_Pipeline_prod6, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod7_fu_667">hwmm_layer1_Pipeline_prod7, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod8_fu_676">hwmm_layer1_Pipeline_prod8, 1, 0, 145, 112, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod9_fu_685">hwmm_layer1_Pipeline_prod9, 1, 0, 145, 112, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">289, 66, 1, 66</column>
+<column name="grp_fu_1239_ce">147, 33, 1, 33</column>
+<column name="grp_fu_1239_p0">147, 33, 32, 1056</column>
+<column name="grp_fu_1239_p1">147, 33, 32, 1056</column>
+<column name="grp_fu_1243_ce">147, 33, 1, 33</column>
+<column name="grp_fu_1243_p0">147, 33, 32, 1056</column>
+<column name="grp_fu_1243_p1">147, 33, 32, 1056</column>
+<column name="input_img_address0">147, 33, 7, 231</column>
+<column name="input_img_ce0">147, 33, 1, 33</column>
+<column name="output_0_address0">130, 29, 5, 145</column>
+<column name="output_0_address1">25, 5, 5, 25</column>
+<column name="output_0_d0">130, 29, 32, 928</column>
+<column name="output_0_d1">25, 5, 32, 160</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">65, 0, 65, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod10_fu_694_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod11_fu_703_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod12_fu_712_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod13_fu_721_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod14_fu_730_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod15_fu_739_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod16_fu_748_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod17_fu_757_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod18_fu_766_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod19_fu_775_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod20_fu_784_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod21_fu_793_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod22_fu_802_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod23_fu_811_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod24_fu_820_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod25_fu_829_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod26_fu_838_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod27_fu_847_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod28_fu_856_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod29_fu_865_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod30_fu_874_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod31_fu_883_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod32_fu_892_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod33_fu_901_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod34_fu_910_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod4_fu_640_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod5_fu_649_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod6_fu_658_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod7_fu_667_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod8_fu_676_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod9_fu_685_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_hwmm_layer1_Pipeline_prod_fu_631_ap_start_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, hwmm_layer1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, hwmm_layer1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, hwmm_layer1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, hwmm_layer1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, hwmm_layer1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, hwmm_layer1, return value</column>
+<column name="input_img_address0">out, 7, ap_memory, input_img, array</column>
+<column name="input_img_ce0">out, 1, ap_memory, input_img, array</column>
+<column name="input_img_q0">in, 32, ap_memory, input_img, array</column>
+<column name="output_0_address0">out, 5, ap_memory, output_0, array</column>
+<column name="output_0_ce0">out, 1, ap_memory, output_0, array</column>
+<column name="output_0_we0">out, 1, ap_memory, output_0, array</column>
+<column name="output_0_d0">out, 32, ap_memory, output_0, array</column>
+<column name="output_0_address1">out, 5, ap_memory, output_0, array</column>
+<column name="output_0_ce1">out, 1, ap_memory, output_0, array</column>
+<column name="output_0_we1">out, 1, ap_memory, output_0, array</column>
+<column name="output_0_d1">out, 32, ap_memory, output_0, array</column>
+</table>
+</item>
+</section>
+</profile>

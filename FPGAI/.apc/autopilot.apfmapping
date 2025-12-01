@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matmul.cpp" path="D:\University_of_Colorado_Boulder\Fall2025\Embedded_AI\Prj\FPGA_AI\src\hls\matmul.cpp"/>
+    <originFiles name="matmul.hpp" path="D:\University_of_Colorado_Boulder\Fall2025\Embedded_AI\Prj\FPGA_AI\src\hls\matmul.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="matmul_tb.cpp" path="D:\University_of_Colorado_Boulder\Fall2025\Embedded_AI\Prj\FPGA_AI\src\hls\matmul_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

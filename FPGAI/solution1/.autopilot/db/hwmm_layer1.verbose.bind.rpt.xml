@@ -1,0 +1,77 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'hwmm_layer1'" level="0">
+<item name = "Date">Tue Nov 25 19:16:00 2025
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)</item>
+<item name = "Project">FPGAI</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">30.00 ns, 24.166 ns, 0.20 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3424, 3424, 0.103 ms, 0.103 ms, 3424, 3424, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_hwmm_layer1_Pipeline_prod_fu_631">hwmm_layer1_Pipeline_prod, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod4_fu_640">hwmm_layer1_Pipeline_prod4, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod5_fu_649">hwmm_layer1_Pipeline_prod5, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod6_fu_658">hwmm_layer1_Pipeline_prod6, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod7_fu_667">hwmm_layer1_Pipeline_prod7, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod8_fu_676">hwmm_layer1_Pipeline_prod8, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod9_fu_685">hwmm_layer1_Pipeline_prod9, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod10_fu_694">hwmm_layer1_Pipeline_prod10, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod11_fu_703">hwmm_layer1_Pipeline_prod11, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod12_fu_712">hwmm_layer1_Pipeline_prod12, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod13_fu_721">hwmm_layer1_Pipeline_prod13, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod14_fu_730">hwmm_layer1_Pipeline_prod14, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod15_fu_739">hwmm_layer1_Pipeline_prod15, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod16_fu_748">hwmm_layer1_Pipeline_prod16, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod17_fu_757">hwmm_layer1_Pipeline_prod17, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod18_fu_766">hwmm_layer1_Pipeline_prod18, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod19_fu_775">hwmm_layer1_Pipeline_prod19, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod20_fu_784">hwmm_layer1_Pipeline_prod20, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod21_fu_793">hwmm_layer1_Pipeline_prod21, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod22_fu_802">hwmm_layer1_Pipeline_prod22, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod23_fu_811">hwmm_layer1_Pipeline_prod23, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod24_fu_820">hwmm_layer1_Pipeline_prod24, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod25_fu_829">hwmm_layer1_Pipeline_prod25, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod26_fu_838">hwmm_layer1_Pipeline_prod26, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod27_fu_847">hwmm_layer1_Pipeline_prod27, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod28_fu_856">hwmm_layer1_Pipeline_prod28, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod29_fu_865">hwmm_layer1_Pipeline_prod29, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod30_fu_874">hwmm_layer1_Pipeline_prod30, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod31_fu_883">hwmm_layer1_Pipeline_prod31, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod32_fu_892">hwmm_layer1_Pipeline_prod32, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod33_fu_901">hwmm_layer1_Pipeline_prod33, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+<column name="grp_hwmm_layer1_Pipeline_prod34_fu_910">hwmm_layer1_Pipeline_prod34, 105, 105, 3.150 us, 3.150 us, 105, 105, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

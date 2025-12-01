@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'nn_inference_Pipeline_loop1'
+================================================================
+* Date:           Tue Nov 25 19:16:00 2025
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)
+* Project:        FPGAI
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  30.00 ns|  26.862 ns|     0.20 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       35|       35|  1.050 us|  1.050 us|   35|   35|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop1   |       33|       33|         3|          1|          1|    32|       yes|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.41>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.58ns)   --->   "%store_ln0 = store i6 0, i6 %i"   --->   Operation 7 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i_2 = load i6 %i" [FPGA_AI/src/hls/matmul.cpp:63]   --->   Operation 9 'load' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 10 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.42ns)   --->   "%icmp_ln63 = icmp_eq  i6 %i_2, i6 32" [FPGA_AI/src/hls/matmul.cpp:63]   --->   Operation 11 'icmp' 'icmp_ln63' <Predicate = true> <Delay = 1.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32"   --->   Operation 12 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.82ns)   --->   "%add_ln63 = add i6 %i_2, i6 1" [FPGA_AI/src/hls/matmul.cpp:63]   --->   Operation 13 'add' 'add_ln63' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln63 = br i1 %icmp_ln63, void %.split12, void %_Z13hw_act_layer1PA32_fS0_.exit.preheader.exitStub" [FPGA_AI/src/hls/matmul.cpp:63]   --->   Operation 14 'br' 'br_ln63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%i_cast = zext i6 %i_2" [FPGA_AI/src/hls/matmul.cpp:63]   --->   Operation 15 'zext' 'i_cast' <Predicate = (!icmp_ln63)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%temp_output_0_addr = getelementptr i32 %temp_output_0, i64 0, i64 %i_cast" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 16 'getelementptr' 'temp_output_0_addr' <Predicate = (!icmp_ln63)> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (3.25ns)   --->   "%temp_output_0_load = load i5 %temp_output_0_addr" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 17 'load' 'temp_output_0_load' <Predicate = (!icmp_ln63)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_1 : Operation 18 [1/1] (1.58ns)   --->   "%store_ln63 = store i6 %add_ln63, i6 %i" [FPGA_AI/src/hls/matmul.cpp:63]   --->   Operation 18 'store' 'store_ln63' <Predicate = (!icmp_ln63)> <Delay = 1.58>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 19 'br' 'br_ln0' <Predicate = (!icmp_ln63)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 26.8>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specloopname_ln63 = specloopname void @_ssdm_op_SpecLoopName, void @empty_0" [FPGA_AI/src/hls/matmul.cpp:63]   --->   Operation 20 'specloopname' 'specloopname_ln63' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/2] (3.25ns)   --->   "%temp_output_0_load = load i5 %temp_output_0_addr" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 21 'load' 'temp_output_0_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%bitcast_ln65 = bitcast i32 %temp_output_0_load" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 22 'bitcast' 'bitcast_ln65' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%tmp = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %bitcast_ln65, i32 23, i32 30" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 23 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln65 = trunc i32 %bitcast_ln65" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 24 'trunc' 'trunc_ln65' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (1.55ns)   --->   "%icmp_ln65 = icmp_ne  i8 %tmp, i8 255" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 25 'icmp' 'icmp_ln65' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (2.44ns)   --->   "%icmp_ln65_1 = icmp_eq  i23 %trunc_ln65, i23 0" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 26 'icmp' 'icmp_ln65_1' <Predicate = true> <Delay = 2.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node and_ln65)   --->   "%or_ln65 = or i1 %icmp_ln65_1, i1 %icmp_ln65" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 27 'or' 'or_ln65' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (22.6ns)   --->   "%tmp_1 = fcmp_olt  i32 %temp_output_0_load, i32 0" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 28 'fcmp' 'tmp_1' <Predicate = true> <Delay = 22.6> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 0> <II = 1> <Delay = 22.6> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln65 = and i1 %or_ln65, i1 %tmp_1" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 29 'and' 'and_ln65' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%br_ln65 = br i1 %and_ln65, void %.split12._crit_edge, void" [FPGA_AI/src/hls/matmul.cpp:65]   --->   Operation 30 'br' 'br_ln65' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 33 'ret' 'ret_ln0' <Predicate = (icmp_ln63)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 31 [1/1] (3.25ns)   --->   "%store_ln66 = store i32 0, i5 %temp_output_0_addr" [FPGA_AI/src/hls/matmul.cpp:66]   --->   Operation 31 'store' 'store_ln66' <Predicate = (and_ln65)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln66 = br void %.split12._crit_edge" [FPGA_AI/src/hls/matmul.cpp:66]   --->   Operation 32 'br' 'br_ln66' <Predicate = (and_ln65)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 30ns, clock uncertainty: 0.2ns.
+
+ <State 1>: 3.41ns
+The critical path consists of the following:
+	'alloca' operation ('i') [2]  (0 ns)
+	'load' operation ('i', FPGA_AI/src/hls/matmul.cpp:63) on local variable 'i' [6]  (0 ns)
+	'add' operation ('add_ln63', FPGA_AI/src/hls/matmul.cpp:63) [10]  (1.83 ns)
+	'store' operation ('store_ln63', FPGA_AI/src/hls/matmul.cpp:63) of variable 'add_ln63', FPGA_AI/src/hls/matmul.cpp:63 on local variable 'i' [30]  (1.59 ns)
+
+ <State 2>: 26.9ns
+The critical path consists of the following:
+	'load' operation ('temp_output_0_load', FPGA_AI/src/hls/matmul.cpp:65) on array 'temp_output_0' [16]  (3.25 ns)
+	'fcmp' operation ('tmp_1', FPGA_AI/src/hls/matmul.cpp:65) [23]  (22.6 ns)
+	'and' operation ('and_ln65', FPGA_AI/src/hls/matmul.cpp:65) [24]  (0.978 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'store' operation ('store_ln66', FPGA_AI/src/hls/matmul.cpp:66) of constant 0 on array 'temp_output_0' [27]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
