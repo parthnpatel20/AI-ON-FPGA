@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/FPGA_AI/src/vhdl/fix_address.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fix_address'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/FPGA_AI/src/vhdl/not_gate.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'not_gate'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/FPGA_AI/src/vhdl/nn_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nn_ctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/EMBD_FPGA/EMBD_FPGA.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/sim/design_1_axi_bram_ctrl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_bram_ctrl_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/EMBD_FPGA/EMBD_FPGA.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/sim/bd_afc3_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_afc3_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/EMBD_FPGA/EMBD_FPGA.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_ps7_0_100M_0'
