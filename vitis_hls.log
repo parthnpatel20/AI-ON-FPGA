@@ -1,0 +1,54 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'D:/xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'patel' on host 'parth_legion' (Windows NT_amd64 version 6.2) on Tue Nov 25 19:17:07 -0700 2025
+INFO: [HLS 200-10] In directory 'D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj'
+Sourcing Tcl script 'D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/FPGAI/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project FPGAI 
+INFO: [HLS 200-10] Opening project 'D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/FPGAI'.
+INFO: [HLS 200-1510] Running: set_top nn_inference 
+INFO: [HLS 200-1510] Running: add_files FPGA_AI/src/hls/matmul.cpp 
+INFO: [HLS 200-10] Adding design file 'FPGA_AI/src/hls/matmul.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files FPGA_AI/src/hls/matmul.hpp 
+INFO: [HLS 200-10] Adding design file 'FPGA_AI/src/hls/matmul.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb FPGA_AI/src/hls/matmul_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'FPGA_AI/src/hls/matmul_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/FPGAI/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.2ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 30 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 30ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.2 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/FPGA_AI/src/hls/nn_inference.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/University_of_Colorado_Boulder/Fall2025/Embedded_AI/Prj/FPGAI/solution1/impl/ip'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'nn_inference_fadd_32ns_32ns_32_2_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_inference_fadd_32ns_32ns_32_2_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_inference_fadd_32ns_32ns_32_2_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'nn_inference_fcmp_32ns_32ns_1_1_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_inference_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_inference_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'nn_inference_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_inference_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_inference_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2021.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 25 19:17:21 2025...
+INFO: [HLS 200-802] Generated output file FPGA_AI/src/hls/nn_inference.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 13.578 seconds; current allocated memory: 242.984 MB.
